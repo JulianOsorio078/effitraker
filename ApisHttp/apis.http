@@ -1,0 +1,23 @@
+###
+GET http://localhost:8080/v1/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp1bHlzayIsImV4cCI6MTcxODU2NTA4MH0.DVAZ8qO2GQ7N3VGnw82lSYrIQoYzPpU4-2oO_9pOxGw
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "JULY",
+    "password": "julysk",
+    "email": "julian.osorio078@gmial.com",
+    "username": "julysk"
+}
+
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username": "julysk",
+    "password": "julysk"
+}
